@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 10px;
+  height: 980px;
+}
+
+.scroll {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  color: #666;
+  font-size: 28px;
+  text-align: center;
+}
+
+.header {
+  background: #00ADB5;
+  height: 32px;
+  color: #FFF;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 300px;
+  transform: translateY(200px);
+  transition: transform 0.5s;
+  transition-delay: 0.25s;
+}
+
+.container {
+  padding: 20px;
+  height: 200px;
+  background: #f9fdfd;
+  box-sizing: border-box;
+  border: 1px solid #00ADB5;
+  overflow-y: auto;
+}
+
+.contact label,
+.contact input,
+.contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact.open {
+  transform: translateY(0);
+}
+
+.contact:hover {
+  transform: translateY(0);
+}
